@@ -26,3 +26,9 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+# Configuração Exxetion notification
+#ExceptionNotification::Notifier.sender_address = %("TI SEMACE" <ti@semace.ce.gov.br>)
+ExceptionNotification::Notifier.exception_recipients = %w(ti@semace.ce.gov.br)
+ExceptionNotification::Notifier.email_prefix = "[ERRO SISTEMA FISCALIZAÇÃO] "
+# end configuração exception_notification

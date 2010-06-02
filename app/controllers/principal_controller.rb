@@ -1,0 +1,2 @@
+class PrincipalController < ApplicationController
+end
